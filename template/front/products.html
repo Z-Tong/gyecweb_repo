@@ -1,0 +1,42 @@
+﻿
+    #parse("head.html")
+    <div class="clear">
+    </div>
+    <div class="main">
+        <div id="left">
+            #parse("product_sort.html")
+            <!--menu-->
+            #parse("contact_us.html")
+        </div>
+        <!--left-->
+        <div id="right">
+            <div class="position">
+                <span>您的位置：<a href="index.html">首页&nbsp;></a>蚀刻工艺</span>机器视觉检测设备</div>
+            <div class="web_box">
+                <div class="content">
+                    <ul class="products">
+                    #foreach($plitem in $pl.Rows)
+                        <li>
+                            <a href="Product_Info.ashx?id=$plitem.product_id">
+                                <img src="../$plitem.product_image" width="160" height="120" alt="" />
+                            </a>
+                            <span><a href="Product_Info.ashx?id=$plitem.product_id">$plitem.product_title</a></span>
+                        </li>
+                    #end
+                    </ul>
+                    <div id="pagerMain" class="apage">
+                        <font color="#333" title="首页">首页</font> <font color="#333" title="上10页"></font><font
+                            color="#333" title="上一页">上一页</font> <b>1</b> <a href="">2</a> <a href="">3</a>
+                        <a href="">4</a> <a href="">5</a> <a href="">6</a> <a href="">7</a> <a href="">8</a>
+                        <a href="">9</a> <a href="">10</a> <a href="" title="下一页">下一页</a> <a href="" title="尾页">
+                            尾页</a> <b>12</b>条/页，<b><span class="tx">1</span>/148</b>，共<b><span id='recordcount'>1772</span></b>条
+                    </div>
+                </div>
+                <!--content end-->
+            </div>
+        </div>
+    </div>
+    #parse("foot.html")
+
+</body>
+</html>

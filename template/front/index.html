@@ -1,0 +1,182 @@
+﻿    #parse("head.html")
+    <div class="clear">
+    </div>
+    <div class="main">
+        <div class="about_box">
+            <div class="about_index fl">
+                <div class="left_tit fl">
+                    <h2>
+                        中心简介</h2>
+                    <div class="about_img">
+                        <img src="../images/img_36.jpg" /></div>
+                </div>
+                <div class="right_info fr">
+                    <script type="text/javascript">
+                        document.write(csubstr("$!ec_content", 335));
+                    </script>                            
+                    <div class="more fr">
+                        <a href="#">[更多]</a></div>
+                </div>
+            </div>
+            <div class="viedo_index fr">
+                <h2>
+                    用户登录</h2>
+                <div class="video">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+                        width="315" height="200">
+                        <param name="movie" value="Flvplayer.swf" />
+                        <param name="wmode" value="transparent">
+                        <param name="quality" value="high" />
+                        <param name="allowFullScreen" value="true" />
+                        <param name="FlashVars" value="vcastr_file=index.flv" />
+                        <embed src="Flvplayer.swf" wmode="transparent" allowfullscreen="true" quality="high"
+                            flashvars="vcastr_file=index.flv" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                            type="application/x-shockwave-flash" width="315" height="200"></embed>
+                    </object>
+                </div>
+            </div>
+        </div>
+        <!--about_box-->
+        <div class="product">
+            <h2>
+                <span class="fr"><a href="#">更多></a></span><i>科研成果</i></h2>
+            <div class="pro">
+                <div class="cardmain img-scroll">
+                    <span class="prev">&nbsp;</span> <span class="next">&nbsp;</span>
+                    <div class="img-list">
+                        <ul>
+                        #foreach($productlistitem in $productlist.Rows)
+                            <li>
+                                <a href="#">
+                                    <img src="../$productlistitem.product_image" width="180" height="100" alt="" />
+                                </a>
+                                <span><a href="#">$productlistitem.product_title</a></span>
+                            </li>
+                        #end 
+                        </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    function DY_scroll(wraper, prev, next, img, speed, or) {
+                        var wraper = $(wraper);
+                        var prev = $(prev);
+                        var next = $(next);
+                        var img = $(img).find('ul');
+                        var w = img.find('li').outerWidth(true);
+                        var s = speed;
+                        next.click(function () {
+                            img.animate({ 'margin-left': -w }, function () {
+                                img.find('li').eq(0).appendTo(img);
+                                img.css({ 'margin-left': 0 });
+                            });
+                        });
+                        prev.click(function () {
+                            img.find('li:last').prependTo(img);
+                            img.css({ 'margin-left': -w });
+                            img.animate({ 'margin-left': 0 });
+                        });
+                        if (or == true) {
+                            ad = setInterval(function () { next.click(); }, s * 770);
+                            wraper.hover(function () { clearInterval(ad); }, function () { ad = setInterval(function () { next.click(); }, s * 970); });
+                        }
+                    }
+                    DY_scroll('.img-scroll', '.prev', '.next', '.img-list', 3, true); // true为自动播放，不加此参数或false就默认不自动
+                </script>
+            </div>
+        </div>
+        <!--product-->
+        <div class="new_box">
+            <div class="new_com fl">
+                <h2>
+                    <span class="fr"><a href="#">更多></a></span><i>中心动态</i></h2>
+                <ul>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化荣旭已开通微信企业公众号</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                </ul>
+            </div>
+            <div class="new_com other fl">
+                <h2>
+                    <span class="fr"><a href="#">更多></a></span><i>在研项目</i></h2>
+                <ul>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化荣旭已开通微信企业公众号</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><span>[2014.7.25]</span><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                </ul>
+            </div>
+            <div class="new_jc fr">
+                <h2>
+                    <span class="fr"><a href="#">更多></a></span><i>科研团队</i></h2>
+                <ul>
+                    <li><a href="#">荣旭已开通微信企业公众号：荣旭自动化荣旭已开通微信企业公众号</a></li>
+                    <li><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                    <li><a href="#">荣旭已开通微信企业公众号：荣旭自动化</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="case">
+            <h2>
+                <span class="fr"><a href="#">更多></a></span><i>仪器设备</i></h2>
+            <div class="case_box">
+                <div id="marquee1" class="marqueeleft">
+                    <div style="width: 8000px; padding: 5px;">
+                        <ul id="marquee1_1">
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                            <li><a class="pic" href="showphoto.html">
+                                <img src="../../images/index_67.jpg"></a><br />
+                                <a href="#" class="title">万科楼盘</a></li>
+                        </ul>
+                        <ul id="marquee1_2">
+                        </ul>
+                    </div>
+                </div>
+                <!--marqueeleft end-->
+                <script type="text/javascript">                    marqueeStart(1, "left");</script>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="link">
+            <p class="link_list">
+                <a href="#">东莞线材颜色检测</a><a href="#">东莞机器视觉</a><a href="#">机器视觉系统</a><a href="#">机器视觉光源</a><a
+                    href="#">光学显微镜</a></p>
+        </div>
+    </div>
+    #parse("foot.html")
+   
+</body>
+</html>

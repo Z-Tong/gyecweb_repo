@@ -1,0 +1,16 @@
+d:\用户目录\我的文档\visual studio 2010\Projects\GYECWeb\GYECWeb\obj\Debug\ResolveAssemblyReference.cache
+d:\用户目录\我的文档\visual studio 2010\Projects\GYECWeb\GYECWeb\bin\GYECWeb.dll
+d:\用户目录\我的文档\visual studio 2010\Projects\GYECWeb\GYECWeb\bin\GYECWeb.pdb
+d:\用户目录\我的文档\visual studio 2010\Projects\GYECWeb\GYECWeb\bin\NVelocity.dll
+d:\用户目录\我的文档\visual studio 2010\Projects\GYECWeb\GYECWeb\bin\NVelocity.xml
+d:\用户目录\我的文档\visual studio 2010\Projects\GYECWeb\GYECWeb\obj\Debug\GYECWeb.dll
+d:\用户目录\我的文档\visual studio 2010\Projects\GYECWeb\GYECWeb\obj\Debug\GYECWeb.pdb
+D:\用户目录\我的文档\Visual Studio 2010\Projects\GYECWeb\GYECWeb\bin\NVelocity.pdb
+G:\工作\工程中心网站\GYECWeb\GYECWeb\bin\GYECWeb.dll
+G:\工作\工程中心网站\GYECWeb\GYECWeb\bin\GYECWeb.pdb
+G:\工作\工程中心网站\GYECWeb\GYECWeb\bin\NVelocity.dll
+G:\工作\工程中心网站\GYECWeb\GYECWeb\bin\NVelocity.pdb
+G:\工作\工程中心网站\GYECWeb\GYECWeb\bin\NVelocity.xml
+G:\工作\工程中心网站\GYECWeb\GYECWeb\obj\Debug\ResolveAssemblyReference.cache
+G:\工作\工程中心网站\GYECWeb\GYECWeb\obj\Debug\GYECWeb.dll
+G:\工作\工程中心网站\GYECWeb\GYECWeb\obj\Debug\GYECWeb.pdb
