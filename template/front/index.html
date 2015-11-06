@@ -47,7 +47,7 @@
                         <ul>
                         #foreach($productlistitem in $productlist.Rows)
                             <li>
-                                <a href="#">
+                                <a href="Product_Info.ashx?id=$productlistitem.product_id">
                                     <img src="../$productlistitem.product_image" width="180" height="100" alt="" />
                                 </a>
                                 <span><a href="#">$productlistitem.product_title</a></span>

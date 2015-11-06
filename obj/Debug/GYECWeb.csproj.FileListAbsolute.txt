@@ -14,3 +14,10 @@ G:\工作\工程中心网站\GYECWeb\GYECWeb\bin\NVelocity.xml
 G:\工作\工程中心网站\GYECWeb\GYECWeb\obj\Debug\ResolveAssemblyReference.cache
 G:\工作\工程中心网站\GYECWeb\GYECWeb\obj\Debug\GYECWeb.dll
 G:\工作\工程中心网站\GYECWeb\GYECWeb\obj\Debug\GYECWeb.pdb
+C:\Users\Administrator\gyecweb_repo\bin\GYECWeb.dll
+C:\Users\Administrator\gyecweb_repo\bin\GYECWeb.pdb
+C:\Users\Administrator\gyecweb_repo\bin\NVelocity.pdb
+C:\Users\Administrator\gyecweb_repo\bin\NVelocity.xml
+C:\Users\Administrator\gyecweb_repo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\gyecweb_repo\obj\Debug\GYECWeb.dll
+C:\Users\Administrator\gyecweb_repo\obj\Debug\GYECWeb.pdb
