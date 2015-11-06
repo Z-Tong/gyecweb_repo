@@ -1,0 +1,49 @@
+﻿
+    #parse("head.html")
+    <div class="clear">
+    </div>
+    <div class="main">
+        <div id="left">
+            #parse("product_sort.html")
+            <!--menu-->
+            #parse("contact_us.html")
+        </div>
+        <!--left-->
+        <div id="right">
+            <div class="position">
+                <span>您的位置：<a href="index.html">首页&nbsp;></a>科研成果</span>$sort</div>
+            <div class="web_box">
+                <div class="content">
+                    <div class="all-list">
+                        <div class="left_img">
+                            <a href="../$image" rel="lightbox[]">
+                                <img src="../$image" width="240" height="180" /></a><br />
+                            <font color="#0570A7"><strong>注：点击上图可查看大图</strong></font></div>
+                        <div class="w_right">
+                            <div class="title">
+                                $title
+                            </div>
+                            <div class="intro">
+                                <h2>
+                                    $title</h2>
+                                <p>
+                                    $info
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--all-list-->
+                    <dl class="bottom_e ">
+                        <dt class="title">产品描述</dt>
+                        <dd class="products">
+                            <p>$des</p>
+                        </dd>
+                    </dl>
+                </div>
+                <!--content end-->
+            </div>
+        </div>
+    </div>
+    #parse("foot.html")
+</body>
+</html>
